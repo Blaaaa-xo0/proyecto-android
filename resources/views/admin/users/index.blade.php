@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="font-bold text-xl text-gray-800 leading-tight">
             {{ __('Admin users') }}
         </h2>
     </x-slot>
@@ -47,6 +47,7 @@
             },
             success: function(html) {
                 $("#resultado").html(html);
+                console.log('filtrado correct');
             }
         });
     });
@@ -56,6 +57,7 @@
             url: "{{ route('filter-users') }}",
             success: function(html) {
                 $("#resultado").html(html);
+                console.log('filtrado initialized');
             }
         });
     });
