@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,10 @@ Route::get('/filter-users', [UserController::class, 'filter'])->name('filter-use
 Route::get('/user/{user}', [UserController::class, 'edit'])->name('user.edit');
 Route::put('/user/setrole/{user}', [UserController::class, 'assignRole'])->name('user.setrole');
 Route::put('/user/deleterole/{user}', [UserController::class, 'deleteRole'])->name('user.deleterole');
+
+Route::get('/roles', [RoleController::class, 'index'])->name('roles');
+Route::get('/role/{role}', [RoleController::class, 'editRole'])->name('role.edit');
+Route::put('role/update/{role}', [RoleController::class, 'updateRole'])->name('role.update');
 
 
 require __DIR__.'/auth.php';

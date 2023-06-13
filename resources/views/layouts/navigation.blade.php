@@ -38,14 +38,9 @@
                                     {{ __('Users') }}
                                 </x-dropdown-link>
         
-                                <x-dropdown-link :href="route('users')">
+                                <x-dropdown-link :href="route('roles')">
                                     {{ __('Roles') }}
                                 </x-dropdown-link>
-
-                                <x-dropdown-link :href="route('users')">
-                                    {{ __('Permisos') }}
-                                </x-dropdown-link>
-                                
                             </x-slot>
                             
                         </x-dropdown>
