@@ -20,9 +20,12 @@ class RoleSeeder extends Seeder
 
         Permission::create(['name' => 'view-admin'])->assignRole($role1);
         Permission::create(['name' => 'ver-rol'])->assignRole($role1);
+        Permission::create(['name' => 'editar-rol'])->assignRole($role1);
         Permission::create(['name' => 'crear-rol'])->assignRole($role1);
+        Permission::create(['name' => 'añadir-rol'])->assignRole($role1);
         Permission::create(['name' => 'eliminar-rol'])->assignRole($role1);
         Permission::create(['name' => 'ver-usuario'])->assignRole($role1);
+        Permission::create(['name' => 'filtrar-usuario'])->assignRole($role1);
         Permission::create(['name' => 'crear-usuario'])->assignRole($role1);
         Permission::create(['name' => 'eliminar-usuario'])->assignRole($role1);
         Permission::create(['name' => 'editar-usuario'])->assignRole($role2);

@@ -9,6 +9,15 @@ use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['permission:ver-usuario'])->only('index');
+        $this->middleware(['permission:editar-usuario'])->only('edit');
+        $this->middleware(['permission:filtrar-usuario'])->only('filter');
+        $this->middleware(['permission:añadir-rol'])->only('assignRole');
+        $this->middleware(['permission:eliminar-rol'])->only('deleteRole');
+    }
+
     public function index() 
     {
         return view('admin.users.index');

@@ -9,6 +9,12 @@ use Spatie\Permission\Models\Permission;
 
 class RoleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['permission:ver-rol'])->only('index');
+        $this->middleware(['permission:editar-rol'])->only('editRole', 'UpdateRole');
+    }
+
     public function index()
     {
         $roles = Role::all();
