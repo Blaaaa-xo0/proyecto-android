@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MapaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
@@ -20,9 +21,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [MapaController::class, 'index']
+)->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -39,6 +39,10 @@ Route::put('/user/deleterole/{user}', [UserController::class, 'deleteRole'])->na
 Route::get('/roles', [RoleController::class, 'index'])->name('roles');
 Route::get('/role/{role}', [RoleController::class, 'editRole'])->name('role.edit');
 Route::put('role/update/{role}', [RoleController::class, 'updateRole'])->name('role.update');
+
+Route::post('map/store', [MapaController::class, 'store'])->name('map.store');
+Route::put('map/update/{mapa}', [MapaController::class, 'update'])->name('map.update');
+Route::delete('map/{mapa}', [MapaController::class, 'destroy'])->name('map.destroy');
 
 
 require __DIR__.'/auth.php';

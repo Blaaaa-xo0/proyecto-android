@@ -35,12 +35,17 @@ class ComposerStaticInitdd636fb9acf54e103d9b9f1a02a903ca
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
         '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
+        '8d3b2199cd129cab173c6d6470bfbcb5' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'v' => 
         array (
             'voku\\' => 5,
+        ),
+        'Y' => 
+        array (
+            'Yajra\\' => 6,
         ),
         'W' => 
         array (
@@ -180,6 +185,11 @@ class ComposerStaticInitdd636fb9acf54e103d9b9f1a02a903ca
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'Yajra\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src',
+            1 => __DIR__ . '/..' . '/yajra/laravel-oci8/src',
         ),
         'Whoops\\' => 
         array (
@@ -6542,6 +6552,28 @@ class ComposerStaticInitdd636fb9acf54e103d9b9f1a02a903ca
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'Yajra\\Oci8\\Auth\\OracleUserProvider' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Auth/OracleUserProvider.php',
+        'Yajra\\Oci8\\Connectors\\OracleConnector' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Connectors/OracleConnector.php',
+        'Yajra\\Oci8\\Eloquent\\OracleEloquent' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Eloquent/OracleEloquent.php',
+        'Yajra\\Oci8\\Oci8Connection' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Oci8Connection.php',
+        'Yajra\\Oci8\\Oci8ServiceProvider' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Oci8ServiceProvider.php',
+        'Yajra\\Oci8\\Oci8ValidationServiceProvider' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Oci8ValidationServiceProvider.php',
+        'Yajra\\Oci8\\OracleReservedWords' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/OracleReservedWords.php',
+        'Yajra\\Oci8\\PDO\\Oci8Driver' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/PDO/Oci8Driver.php',
+        'Yajra\\Oci8\\Query\\Grammars\\OracleGrammar' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/Grammars/OracleGrammar.php',
+        'Yajra\\Oci8\\Query\\OracleBuilder' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/OracleBuilder.php',
+        'Yajra\\Oci8\\Query\\Processors\\OracleProcessor' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/Processors/OracleProcessor.php',
+        'Yajra\\Oci8\\Schema\\Comment' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Comment.php',
+        'Yajra\\Oci8\\Schema\\Grammars\\OracleGrammar' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Grammars/OracleGrammar.php',
+        'Yajra\\Oci8\\Schema\\OracleAutoIncrementHelper' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleAutoIncrementHelper.php',
+        'Yajra\\Oci8\\Schema\\OracleBlueprint' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleBlueprint.php',
+        'Yajra\\Oci8\\Schema\\OracleBuilder' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleBuilder.php',
+        'Yajra\\Oci8\\Schema\\Sequence' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Sequence.php',
+        'Yajra\\Oci8\\Schema\\Trigger' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Trigger.php',
+        'Yajra\\Oci8\\Validation\\Oci8DatabasePresenceVerifier' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Validation/Oci8DatabasePresenceVerifier.php',
+        'Yajra\\Pdo\\Oci8' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8.php',
+        'Yajra\\Pdo\\Oci8\\Exceptions\\Oci8Exception' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8/Exceptions/Oci8Exception.php',
+        'Yajra\\Pdo\\Oci8\\Statement' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8/Statement.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

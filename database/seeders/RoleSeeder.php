@@ -42,11 +42,20 @@ class RoleSeeder extends Seeder
 
         $useradmin->assignRole('Admin');
 
-        User::create([
+        $user = User::create([
             'name' => 'trabajador',
             'email' => 'trabajador@gmail.com',
             'password' => bcrypt('12345678'),
             'cargo' => 'AUNXILIAR'
+        ]);
+
+        $user->assignRole('Empleado');
+
+        User::create([
+            'name' => 'sinrol',
+            'email' => 'sinrol@gmail.com',
+            'password' => bcrypt('12345678'),
+            'cargo' => 'SIN_ROLE'
         ]);
 
     }
