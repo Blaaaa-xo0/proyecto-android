@@ -62,6 +62,7 @@
 </x-app-layout>
 
 <script>
+    var currentMarker;
     // Agregar un controlador de eventos para el evento "click" en el mapa
     mymap.on('click', function(e) {
         // Obtener la latitud y longitud del punto donde se hizo clic
@@ -103,6 +104,8 @@
 
                 // Agregar un controlador de eventos para el evento "popupopen" en el marcador
                 marker.on('popupopen', function(e) {
+                    currentMarker = e.target;
+                    
                     $('.edit-button').on('click', function() {
                         var id = $(this).data('id');
 
@@ -162,7 +165,6 @@
         markersGroup.addLayer(marker);
         // Agregar un controlador de eventos para el evento "click" en el marcador
 
-        var currentMarker;
 
         marker.on('popupopen', function(e) {
             currentMarker = e.target;
