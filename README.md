@@ -1,7 +1,7 @@
 # proyecto-web-app-putumayo
 
 ## Elementos necesarios para correr la app
-[Xampp con php 8.2](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.4/xampp-windows-x64-8.2.4-0-VS16-installer.exe/download)
+[Xampp con php 8.2.x](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.4/xampp-windows-x64-8.2.4-0-VS16-installer.exe/download)
 [visual studio code](https://code.visualstudio.com/)
 [node.js](https://nodejs.org/es)
 [composer](https://getcomposer.org/download/)
